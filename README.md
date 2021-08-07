@@ -1,5 +1,6 @@
 # BRDF
-Implementation from scratch of the Bernoulli Random Density Forest. 
+Implementation from scratch of the Bernoulli Random Density Forest. A new density estimator using random forest. 
+The name come froms the Bernoulli distribution that controls the splitting procedure which can be either at random or by optimizing the integrated squared error (ISE).
 
 The Cython language is used to speed up Python.
 
@@ -9,7 +10,7 @@ This project is part of my master's thesis: "Density-based clustering with Rando
 The model has the following parameters:
 * nTrees: number of trees in the forest. Default: 10
 * minSize: minimum number of samples required to split an internal node. Default = 5.
-* p: probability of random split, otherwise the integrated squared error is minimized. Default = 0.1.
+* p: probability of random split. Default = 0.1.
 
 ### Use
 
